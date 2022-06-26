@@ -34,12 +34,16 @@
                         
                           @if( count($student) > 0)
                             @foreach($student as $std)
+                              @php
+                                $rep_teacher = ($std->reporting_teacher == 1) ? "Vinod" : (($std->reporting_teacher == 2)  ? "Sathish" : (($std->reporting_teacher == 3)  ? "Ajay" : "Aju"));
+                               
+                              @endphp
                           <tr>
                             <td>{{ $std->id }}</td>
                             <td>{{ $std->name }}</td>
                             <td>{{ $std->age }}</td>
                             <td>{{ $std->gender }}</td>
-                            <td>{{ $std->reporting_teacher }}</td>
+                            <td>{{ $rep_teacher }}</td>
                             <td><a href="{{ route('editstudent', $std->id)}}">Edit/</a>
                                  <a id="dl_id" href="#" data-id="{{ $std->id }}">Delete</a>
                             </td>

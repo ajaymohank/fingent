@@ -68,7 +68,15 @@
                   <label class="col-sm-2 col-form-label" for="name">{{ __('Reporting Teacher') }}</label>
                   <div class="col-sm-7">
                     <div class="form-group">
-                      <input class="form-control" name="reporting_teacher" id="reporting_teacher" type="text" svalue="" required="true" />
+                      <!-- <input class="form-control" name="reporting_teacher" id="reporting_teacher" type="text" svalue="" required="true" /> -->
+                      <select name="reporting_teacher" class="form-control custom-select">
+                        <option value="">Select Teacher</option>
+                        <option value="1">Vinod</option>
+                        <option value="2">Sathish</option>
+                        <option value="3">Ajay</option>
+                        <option value="4">Aju</option>
+                        
+                      </select>
                     </div>
                   </div>
                 </div>

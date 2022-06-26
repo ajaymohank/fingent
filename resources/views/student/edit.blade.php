@@ -68,7 +68,15 @@
                   <label class="col-sm-2 col-form-label" for="name">{{ __('Reporting Teacher') }}</label>
                   <div class="col-sm-7">
                     <div class="form-group">
-                      <input class="form-control" name="reporting_teacher" id="reporting_teacher" type="text" value="{{ $details->reporting_teacher }}" required="true" />
+                      <!-- <input class="form-control" name="reporting_teacher" id="reporting_teacher" type="text" value="{{ $details->reporting_teacher }}" required="true" /> -->
+                       <select name="reporting_teacher" class="form-control custom-select">
+                        <option value="">Select Teacher</option>
+                        <option value="1" @if($details->reporting_teacher == 1) selected @endif>Vinod</option>
+                        <option value="2" @if($details->reporting_teacher == 2) selected @endif>Sathish</option>
+                        <option value="3" @if($details->reporting_teacher == 3) selected @endif>Ajay</option>
+                        <option value="4" @if($details->reporting_teacher == 4) selected @endif>Aju</option>
+                        
+                      </select>
                     </div>
                   </div>
                 </div>
