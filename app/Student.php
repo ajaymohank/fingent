@@ -7,9 +7,10 @@ use DB;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 
+
 class Student extends Model
 {
-    use SoftDeletes;
+    //use SoftDeletes;
     protected $table = 'students'; 
     protected $fillable = [ 'name','gender','age','reporting_teacher'];
 

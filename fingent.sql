@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jun 26, 2022 at 11:55 AM
+-- Generation Time: Jun 26, 2022 at 12:46 PM
 -- Server version: 5.7.38-0ubuntu0.18.04.1
 -- PHP Version: 7.2.34-24+ubuntu18.04.1+deb.sury.org+1
 
@@ -58,18 +58,7 @@ CREATE TABLE `marks` (
 --
 
 INSERT INTO `marks` (`id`, `maths`, `science`, `history`, `term`, `deleted_at`, `created_at`, `updated_at`, `student_id`) VALUES
-(1, '70', '70', '80', 'one', '2022-06-25 08:10:04', '2022-06-25 04:53:38', '2022-06-25 08:10:04', NULL),
-(2, '70', '70', '80', 'Two', '2022-06-25 08:18:06', '2022-06-25 05:59:23', '2022-06-25 08:18:06', 2),
-(3, '70', '50', '60', 'Two', '2022-06-25 08:19:53', '2022-06-25 08:12:56', '2022-06-25 08:19:53', 4),
-(4, '70', '80', '90', 'one', '2022-06-25 08:19:53', '2022-06-25 08:19:48', '2022-06-25 08:19:48', 2),
-(5, '70', '50', '80', 'one', '2022-06-25 08:19:53', '2022-06-25 08:22:43', '2022-06-25 08:22:43', 3),
-(6, '70', '70', '80', 'one', '2022-06-25 08:19:53', '2022-06-25 08:28:12', '2022-06-25 08:28:12', 4),
-(7, '70', '70', '60', 'one', '2022-06-25 08:19:53', '2022-06-25 08:29:51', '2022-06-25 08:29:51', 1),
-(8, '70', '70', '80', 'one', '2022-06-25 08:34:11', '2022-06-25 08:31:26', '2022-06-25 08:34:11', 4),
-(9, '70', '50', '80', 'one', '2022-06-25 08:34:54', '2022-06-25 08:34:05', '2022-06-25 08:34:54', 2),
-(10, '70', '70', '80', 'one', NULL, '2022-06-25 08:34:49', '2022-06-25 12:05:23', 4),
-(11, '70', '70', '80', 'Two', NULL, '2022-06-25 08:41:59', '2022-06-25 08:41:59', 4),
-(12, '80', '60', '80', 'Two', NULL, '2022-06-26 00:51:34', '2022-06-26 00:51:34', 5);
+(1, '70', '70', '80', 'one', '2022-06-25 08:10:04', '2022-06-25 04:53:38', '2022-06-25 08:10:04', NULL);
 
 -- --------------------------------------------------------
 
@@ -126,17 +115,6 @@ CREATE TABLE `students` (
   `updated_at` timestamp NULL DEFAULT NULL,
   `deleted_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Dumping data for table `students`
---
-
-INSERT INTO `students` (`id`, `name`, `gender`, `age`, `reporting_teacher`, `created_at`, `updated_at`, `deleted_at`) VALUES
-(1, 'Aju', 'M', 15, '5', '2022-06-25 00:56:17', '2022-06-25 08:41:22', '2022-06-25 08:41:22'),
-(2, 'Aju', 'M', 15, '1', '2022-06-25 01:06:11', '2022-06-26 00:29:16', NULL),
-(3, 'Ajay', 'M', 15, '2', '2022-06-25 01:09:25', '2022-06-26 00:43:00', NULL),
-(4, 'Ajays', 'M', 15, '4', '2022-06-25 01:12:50', '2022-06-26 00:50:53', NULL),
-(5, 'vipin', 'M', 15, '2', '2022-06-26 00:51:11', '2022-06-26 00:51:11', NULL);
 
 -- --------------------------------------------------------
 
@@ -210,7 +188,7 @@ ALTER TABLE `failed_jobs`
 -- AUTO_INCREMENT for table `marks`
 --
 ALTER TABLE `marks`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 --
 -- AUTO_INCREMENT for table `migrations`
 --
@@ -220,7 +198,7 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT for table `students`
 --
 ALTER TABLE `students`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 --
 -- AUTO_INCREMENT for table `users`
 --

@@ -46,7 +46,7 @@
                             <td>{{ $std->term }}</td>
                             <td>{{ $std->total_marks }}</td>
                             <td>{{  date('F d,Y h:i:s A', strtotime($std->created_at)) }}</td>
-                            <td><a href="{{ route('editmarks', $std->id)}}">Edit/</a>/
+                            <td><a href="{{ route('editmarks', $std->id)}}">Edit/</a>
                                 <a id="dl_id" href="#" data-id="{{ $std->id }}">Delete</a>
                             </td>
                          </tr>
