@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jun 26, 2022 at 12:46 PM
+-- Generation Time: Jun 26, 2022 at 02:50 PM
 -- Server version: 5.7.38-0ubuntu0.18.04.1
 -- PHP Version: 7.2.34-24+ubuntu18.04.1+deb.sury.org+1
 
@@ -52,13 +52,6 @@ CREATE TABLE `marks` (
   `updated_at` timestamp NULL DEFAULT NULL,
   `student_id` bigint(20) UNSIGNED DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Dumping data for table `marks`
---
-
-INSERT INTO `marks` (`id`, `maths`, `science`, `history`, `term`, `deleted_at`, `created_at`, `updated_at`, `student_id`) VALUES
-(1, '70', '70', '80', 'one', '2022-06-25 08:10:04', '2022-06-25 04:53:38', '2022-06-25 08:10:04', NULL);
 
 -- --------------------------------------------------------
 
